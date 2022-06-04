@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Número secreto - Adrian Castro</title>
+</head>
+
+<body>
+    <main>
+        <h1>Adivina el número secreto</h1>
+        <section id="codigo" class="flex wrap center">
+            <div class="w100 flex wrap">
+                <div class="w20">
+                    <div class="cel flex">*</div>
+                </div>
+                <div class="w20">
+                    <div class="cel flex">*</div>
+                </div>
+                <div class="w20">
+                    <div class="cel flex">*</div>
+                </div>
+                <div class="w20">
+                    <div class="cel flex">*</div>
+                </div>
+                <div class="w20">
+                    <div class="cel flex">*</div>
+                </div>
+            </div>
+        </section>
+        <section class="w100 flex wrap center comprobar">
+            <label class="w90" for="numero">Escribe aquí un número</label><br>
+            <input class="w90" type="text" id="numero" name="numero" value="01234"><br>
+            <button class="w90" id="check" onclick="Comprobar()">Comprobar</button>
+        </section>
+        <section class="w100 info">
+        <p class="w90" id="info">Código secreto generado. Introduzca un número.</p>
+        </section>
+        <section id="Result" class="flex wrap center">
+            
+        </section>
+        <section class="w100 flex wrap center">
+            <button class="w40" id="check" onclick="newGame()"> 🎲​ Nueva Partida 🎲 </button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
